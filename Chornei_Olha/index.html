@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../Chornei_Olha/css/styles.css" />
+    <title>3D Game</title>
+  </head>
+  <body>
+    <div
+      class="microphone-icon"
+      id="microphone-icon"
+      onclick="toggleMicrophone()"
+    >
+      <img src="./images/on.png" alt="Microphone" />
+    </div>
+    <div class="step" id="step-1">
+      <div class="container">
+        <img
+          class="image left"
+          src="./images/desktop/girl_1.svg"
+          alt="Woman 1"
+        />
+
+        <div class="content">
+          <h2 class="oval-frame">
+            Stop spending time on mediocre online stuff!
+          </h2>
+          <h1 class="main-text">
+            Explore our intriguing <br />
+            3D game
+          </h1>
+          <h3 class="primary-text">
+            instead and experience unparalleled pleasure like you've never seen
+            before.
+          </h3>
+          <div class="buttons">
+            <button class="button no" id="no-thanks">NO, THANKS</button>
+            <button class="button yes" id="to-step-2">CONTINUE</button>
+          </div>
+        </div>
+
+        <img
+          class="image right"
+          src="./images/desktop/girl_2.svg"
+          alt="Woman 2"
+        />
+      </div>
+    </div>
+
+    <div class="step" id="step-2" style="display: none">
+      <div class="container">
+        <h1 class="main-text slider">
+          Who Would You Choose as Your First Partner, if you play right now?
+        </h1>
+
+        <div class="slider">
+          <button class="arrow previous" id="prev-slide">
+            <img src="./images/button.png" alt="next" />
+          </button>
+          <div class="slide" id="slide-1">
+            <img src="./images/desktop/girl_for_slider_1.png" alt="Woman 1" />
+            <p class="slider-text">YOUR NEIGHBOR</p>
+          </div>
+          <div class="slide" id="slide-2" style="display: none">
+            <img src="./images/desktop/girl_for_slider_2.png" alt="Woman 2" />
+            <p class="slider-text">STEP-SISTER</p>
+          </div>
+          <div class="slide" id="slide-3" style="display: none">
+            <img src="./images/desktop/girl_for_slider_3.png" alt="Woman 3" />
+            <p class="slider-text">FAMOUS CELEBRITY</p>
+          </div>
+          <button class="arrow next" id="next-slide">
+            <img src="./images/button.png" alt="next" />
+          </button>
+        </div>
+
+        <button class="button next" id="to-step-3">NEXT</button>
+      </div>
+    </div>
+
+    <div class="step" id="step-3" style="display: none">
+      <div class="container">
+        <div class="image left">
+          <img src="./images/desktop/girl_3.svg" alt="Woman 3" />
+        </div>
+
+        <h1 class="main-text warning">WARNING</h1>
+        <h3 class="text">
+          You must be at least 18 years old and comfortable with mature topics
+          to play the game.
+        </h3>
+        <button class="button next warning">OK, CONTINUE</button>
+
+        <div class="image right">
+          <img src="./images/desktop/girl_4.svg" alt="Woman 4" />
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
